@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #e5e5e5;
+}
+
+img.logo {
+    width: 8rem;
+    height: 4.8rem;
+}

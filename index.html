@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <!--HOJA DE ESTILOS-->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <div class="encriptar">
+            <textarea 
+            name="texto" 
+            id="texto" 
+            class="texto" 
+            cols="30" 
+            rows="10" 
+            placeholder="Ingrese texto aquí"
+            ></textarea>
+        </div>
+        <div class="reglas">
+            <p>Solo letras minúsculas y sin acento. Ni caracteres especiales.</p>
+        </div>
+        <div class="botones">
+            <button 
+            class="btnEncriptar" 
+            onclick="encriptar();"
+            >Encriptar</button>
+            <input 
+            type="button"
+            class="btnDesencriptar" 
+            onclick="desencriptar();" 
+            value="desencriptar"
+            ></input>
+        </div>
+    </div>
+    <div class="encriptado">
+        <img src="" alt="" id="imagenDesencriptado">
+        <div class="mensaje" id="mensaje">
+            <h2 id="tituloMensaje">Ningún mensaje encontrado</h2>
+            <p id="parrafo">Ingresa el texto que deseas Encriptar/Desencriptar</p>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+        </div>
+    </div>
+  </body>
+  <!--APP JS-->
+  <script src="./js/app.js"></script>
+</html>
